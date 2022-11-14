@@ -1,0 +1,246 @@
+/* Imported Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@360&family=Source+Sans+Pro:wght@300&display=swap');
+
+a {
+    color: #ffc107;
+}
+
+.stroke {
+    text-shadow: -1px 1px 0 #000,
+        1px 1px 0 #000,
+        1px -1px 0 #000,
+        -1px -1px 0 #000;
+}
+
+/* Header */
+
+header {
+    margin: 0;
+}
+
+/* Navigation bar */
+.nav-item .nav-link {
+    font-family: Lora, sans-serif;
+    font-size: large;
+    letter-spacing: 5px;
+    padding: 15px;
+}
+
+/* Main area on home page */
+
+
+#hero-outer {
+    height: 600px;
+    width: 100%;
+    overflow: hidden;
+
+    position: relative;
+    margin-bottom: 20px;
+}
+
+#hero-image {
+    min-height: 100%;
+    width: 100%;
+    background: url('../images/hero_background_image.jpg') no-repeat 95% 50%;
+    background-size: cover;
+
+
+
+    animation-name: hero-zoom;
+    animation-duration: 5s;
+    animation-fill-mode: backwards;
+}
+
+@keyframes hero-zoom {
+    from {
+        transform: scale(1.5);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+#cover-text {
+    font-size: 150%;
+    font-family: Lora, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+
+    width: auto;
+    height: 160px;
+
+    padding-top: 40px;
+    padding-left: 10px;
+    background-color: #172123;
+
+    bottom: 325px;
+    right: 500px;
+
+    position: sticky
+}
+
+#cover-text,
+#cover-text h2 {
+    line-height: normal;
+}
+
+
+#cover-text,
+#cover-text h3 {
+    font-size: medium;
+    color: #FFFFFF;
+    font-style: oblique;
+    text-align: center;
+}
+
+.fa-seedling {
+    font-size: x-large;
+    color: #FFFFFF;
+}
+
+/* Menu page */
+
+
+.background-image {
+    background-image: url('../images/coffee_garden_logo.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.menu_container {
+    font-family: Lora, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-align: center;
+    width: auto;
+    height: 600px;
+    padding-top: 40px;
+    border-style: solid;
+    border-color: #ffffff;
+    border-width: 1px;
+    background-color: #3a828d;
+    position: sticky;
+}
+
+hr {
+    border-top: 5px solid #FFFFFF;
+    width: 100%;
+    margin: 5px 0;
+}
+
+#check-out-our-menus {
+    text-align: center;
+    font-size: 280%;
+}
+
+
+.download-button {
+    text-align: center;
+    color: #ffffff;
+    font-family: Lora, sans-serif;
+    font-size: medium;
+    font-weight: 300;
+}
+
+.menu_options {
+    color: #FFFFFF;
+}
+
+/* Footer */
+
+#footer {
+    margin-top: 10px;
+}
+
+#footer .fa {
+    color: #32863A;
+    font-size: large;
+}
+
+.col-sm-4 {
+    text-align: center;
+}
+
+
+/* Media Quiries */
+@media screen and (max-width: 1300px) {
+    .container {
+        height: auto;
+
+    }
+
+    .square-container {
+        width: auto;
+        height: auto;
+        padding-left: 0px;
+        margin-left: 0px;
+    }
+
+
+}
+
+/* Media quiries for tablet sized screens */
+@media screen and (max-width: 950px) {
+    #cover-text {
+        bottom: 270px;
+        right: 0px;
+    }
+
+    .login_container {
+        width: auto;
+    }
+
+    .menu_container {
+        height: auto;
+
+    }
+
+}
+
+/* Media queries for mobile */
+
+@media screen and (max-width:650px) {
+    #cover-text {
+        height: auto;
+        padding-top: 10px;
+    }
+
+    .login_container {
+        height: auto;
+        padding-left: 65px;
+        padding-top: 50px;
+    }
+
+    .container {
+        padding-left: 0px;
+    }
+
+    .booking_container {
+        width: auto;
+        padding-left: 100px;
+        padding-right: 85px;
+    }
+
+    .my_bookings_container {
+        width: auto;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .menu_container {
+        padding-top: 0px;
+        padding-bottom: 75px;
+
+    }
+
+}
+
+/* Media Query for small mobile devices*/
+
+@media screen and (max-width:360px) {
+    .menu_container {
+        padding-bottom: 40px;
+
+    }
+}
