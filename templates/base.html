@@ -20,7 +20,7 @@
 
     <!--Link to the CSS file-->
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    <title>Welcome to The Coffee Garden | Highcliffe</title>
+    <title>The Coffee Garden</title>
 </head>
 
 <body class="d-flex flex-column h-100 main-bg">
@@ -40,17 +40,17 @@
                     <a class="nav-link" href="{% url 'restaurant:home' %}">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{% url 'restaurant:menus' %}">Menus</a>
+                    <a class="nav-link" href="{% url 'restaurant:menu' %}">Menu</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{% url 'restaurant:bookings' %}">Book a Table</a>
+                    <a class="nav-link" href="{% url 'restaurant:booking' %}">Book a Table</a>
                 </li>
 
                 <!--The My Bookings and Log out tabs will only appear
                 if the an autherised user is logged in -->
                 {% if user.is_authenticated %}
                 <li class="nav-item">
-                    <a class="nav-link" href="{% url 'restaurant:my_bookings' %}">My Bookings</a>
+                    <a class="nav-link" href="{% url 'restaurant:update_booking' %}">My Booking</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{% url 'account_logout' %}">Logout</a>

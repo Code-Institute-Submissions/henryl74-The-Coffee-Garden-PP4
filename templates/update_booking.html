@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<section id="booking" class="book_a_table">
+    <div class="my_bookings_container">
+        <h2 class="stroke">My Bookings:</h2>
+        <p class="stroke">To update a booking
+            please click on the buttons below.</p>
+        <div class="row">
+            {% for booking in booking %}
+            <div class="col-md-5">
+                <div class="card mb-5">
+                    <div class="card-body">
+                        <h5 class='card-title text-uppercase text-center'>{{ booking.name }}</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">{{ booking.date }} at
+                            {{ booking.time }}</h6>
+                        <div class='card-text'>
+                            <p>No. of People: {{ booking.number_of_people }}</p>
+                        </div>
+                        <a href="/edit_bookings/{{booking.id}}" class="btn btn-success">Edit</a>
+                        <a href="/delete_booking/{{booking.id}}" class="btn btn-success">Cancel</a>
+                    </div>
+                </div>
+            </div>
+            {%endfor%}
+        </div>
+    </div>
+</section>
+
+
+
+
+{%endblock%}
