@@ -1,8 +1,10 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from django.views import generic
 from .models import Booking
-from .forms import BookingForm
+# from .forms import BookingForm
 from django.contrib import messages
+# from django.views.generic.edit import FormView
+# from .forms import OnlineForm
 
 # Create your views here.
 
@@ -48,16 +50,6 @@ class BookingView(FormView):
             booking.save()
 
         return render(request, 'thank_you.html')
-
-
-# class ThankYou(generic.DetailView):
-#     """
-#     Renders the Thank You page in the browser
-#     """
-#     template_name = 'thank_you.html'
-
-#     def get(self, request):
-#         return render(request, 'thank_you.html')
 
 
 class Menu(generic.DetailView):
