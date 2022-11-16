@@ -20,36 +20,36 @@ class Home(generic.DetailView):
         return render(request, 'index.html')
 
 
-class BookingView(FormView):
-    """
-    Renders the Booking form page in the browser
-    Using the OnlineForm created in the forms.py file
-    When the booking form is completed and submitted
-    the user is redirect to a thank you for booking
-    message page.
-    """
-    template_name = 'booking.html'
-    form_class = OnlineForm
-    success_url = '/thank_you/'
+# class BookingView(FormView):
+#     """
+#     Renders the Booking form page in the browser
+#     Using the OnlineForm created in the forms.py file
+#     When the booking form is completed and submitted
+#     the user is redirect to a thank you for booking
+#     message page.
+#     """
+#     template_name = 'booking.html'
+#     form_class = OnlineForm
+#     success_url = '/thank_you/'
 
-    def booking_view(self, request):
-        return render(request, 'booking.html')
+#     def booking_view(self, request):
+#         return render(request, 'booking.html')
 
-    def post(self, request):
-        """
-        Uses the OnlineForm from forms.py
-        Checks if all the infromation in valid
-        and then saves it to the database.
-        Once saved users are redirected to the
-        Thank you page
-        """
-        form = OnlineForm(data=request.POST)
-        if form.is_valid():
-            booking = form.save(commit=False)
-            booking.user = request.user
-            booking.save()
+#     def post(self, request):
+#         """
+#         Uses the OnlineForm from forms.py
+#         Checks if all the infromation in valid
+#         and then saves it to the database.
+#         Once saved users are redirected to the
+#         Thank you page
+#         """
+#         form = OnlineForm(data=request.POST)
+#         if form.is_valid():
+#             booking = form.save(commit=False)
+#             booking.user = request.user
+#             booking.save()
 
-        return render(request, 'thank_you.html')
+#         return render(request, 'thank_you.html')
 
 
 class Menu(generic.DetailView):
