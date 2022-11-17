@@ -134,34 +134,3 @@ def delete_booking(request, booking_id):
     # Pops up a message to the user when a bookings is cancelled
     messages.success(request, 'Your booking has been cancelled')
     return redirect('/')
-
-
-# class SignUpView(FormView):
-#     """
-#     Renders the Sign up form page in the browser
-#     Using the SignUpForm created in the forms.py file
-#     When the Sign up form is completed and submitted
-#     the user will receive a message to say it was
-#     successful.
-#     """
-#     template_name = 'sign_up.html'
-#     form_class = SignUpForm
-
-#     def sign_up_view(self, request):
-#         return render(request, 'sign_up.html')
-
-#     def post(self, request):
-#         """
-#         Uses the SignUpForm from forms.py
-#         Checks if all the infromation in valid
-#         and then saves it to the database.
-#         Once the information is saved the site
-#         visitor will receive a pop up message
-#         """
-#         form = SignUpForm(data=request.POST)
-#         if form.is_valid():
-#             form.save()
-#         # Pops up a message to the site visitor when their information
-#         # has been saved
-#         messages.success(request, 'Thank you for signing up to our newsletter')
-#         return redirect('/')

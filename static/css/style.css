@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@360&family=Source+Sans+Pro:wght@300&display=swap');
 
 a {
-    color: #ffc107;
+    color: #27241e;
 }
 
 .stroke {
@@ -41,13 +41,13 @@ header {
 #hero-image {
     min-height: 100%;
     width: 100%;
-    background: url('../images/hero_background_image.jpg') no-repeat 95% 50%;
+    background: url('../images/hero_background_image.jpg') no-repeat 30% 50%;
     background-size: cover;
 
 
 
     animation-name: hero-zoom;
-    animation-duration: 5s;
+    animation-duration: 3s;
     animation-fill-mode: backwards;
 }
 
@@ -72,7 +72,7 @@ header {
 
     padding-top: 40px;
     padding-left: 10px;
-    background-color: #172123;
+    background-color: rgba(52, 56, 61, 0.7);
 
     bottom: 325px;
     right: 500px;
@@ -119,7 +119,7 @@ header {
     border-style: solid;
     border-color: #ffffff;
     border-width: 1px;
-    background-color: #3a828d;
+    background-color: rgba(52, 56, 61, 0.7);
     position: sticky;
 }
 
@@ -154,7 +154,7 @@ hr {
 }
 
 #footer .fa {
-    color: #32863A;
+    color: #b38d57;
     font-size: large;
 }
 
