@@ -28,7 +28,7 @@
     <!--Heading area, including company logo and Navbar functions -->
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #dbbd94;">
         <a href="{% url 'home' %}">
-            <img src="{% static '../images/coffee_garden_logo.jpg' %}" style="height: 150px;" alt="logo">
+            <img src="{% static '../images/restaurant_logo.jpeg' %}" style="height: 100px;" alt="logo">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,7 +43,7 @@
                     <a class="nav-link" href="{% url 'menu' %}">Menu</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{% url 'home' %}">Book a Table</a>
+                    <a class="nav-link" href="{% url 'menu' %}">Reservation</a>
                 </li>
 
                 <!--The My Bookings and Log out tabs will only appear
@@ -101,6 +101,17 @@
         <footer class="container-fluid">
             <div id="footer-details" class="row">
                 <div class="col-sm-4">
+                    <h5 class="uppercase general-sub"><i class="fa fa-door-open" aria-hidden="true"></i>&nbsp;Opening
+                        Hours:</h5>
+                    <p class="inline-block">
+                        Monday - Sunday
+                    </p>
+                    <p class="inline-block">
+                        08:30 - 15:00
+                    </p>
+                </div>
+
+                <div class="col-sm-4">
                     <h6 class="uppercase general-sub"><i class="fa fa-map-pin" aria-hidden="true"></i>&nbsp;Address:
                     </h6>
                     <p class="inline-block">The Arcade, 291 Lymington Rd,
@@ -114,16 +125,7 @@
                     <p class="inline-block">coffeegarden@gmail.com</p>
 
                 </div>
-                <div class="col-sm-4">
-                    <h5 class="uppercase general-sub"><i class="fa fa-door-open" aria-hidden="true"></i>&nbsp;Opening
-                        Hours:</h5>
-                    <p class="inline-block">
-                        Monday - Sunday
-                    </p>
-                    <p class="inline-block">
-                        08:30 - 15:00
-                    </p>
-                </div>
+
                 <div class="col-sm-4">
                     <h5 class="uppercase general-sub">Social</h5>
                     <ul class="list-inline social-links">

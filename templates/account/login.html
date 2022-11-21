@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% load i18n %}
+{% load account socialaccount %}
+
+{% block head_title %}{% trans "Sign In" %}{% endblock %}
+
+{% block content %}
+
+<section id="login" class="login-image">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 mt-5 offset-md-3">
+        <h2>{% trans "Log In" %}</h2>
+
+        <p>{% blocktrans %}Please login to make your reservation and manage your bookings. If you have not created an
+          account yet then,
+          <a href="{{ signup_url }}"> click here</a> to open one.{% endblocktrans %}</p>
+      </div>
+    </div>
+
+
+
+    <div class="row">
+      <div class="col-md-3 mt-3 mb-5 offset-md-3">
+        <form class="login" method="POST" action="{% url 'account_login' %}">
+          {% csrf_token %}
+          {{ form.as_p }}
+          {% if redirect_field_value %}
+          <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+          {% endif %}
+          <button class="btn btn-success btn-lg" type="submit">{% trans "Log In" %}</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+{% endblock %}
