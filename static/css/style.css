@@ -99,7 +99,6 @@ header {
 
 /* Menu page */
 
-
 .background-image {
     background-image: url('../images/coffee_garden_logo.jpg');
     background-size: cover;
@@ -183,6 +182,77 @@ header {
     border-width: 1px;
     margin-left: 450px;
     text-align: center;
+}
+
+/* reservations page */
+
+.book_a_table {
+    background-image: url('../images/coffee_garden_logo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.booking_container {
+    width: 800px;
+    height: auto;
+    padding-left: 137px;
+    border-style: solid;
+    border-color: #ffffff;
+    color: #ffffff;
+    background-color: rgba(52, 56, 61, 0.7);
+    border-width: 1px;
+    margin: auto;
+    padding-bottom: 10px;
+}
+
+.login_container {
+    width: 800px;
+    height: 550px;
+    padding-left: 137px;
+    border-style: solid;
+    border-color: #ffffff;
+    color: #ffffff;
+    background-color: rgba(52, 56, 61, 0.7);
+    border-width: 1px;
+    margin: auto;
+    padding-top: 71px;
+}
+
+/*Thank you page*/
+
+#thank-you-image {
+    height: 500px;
+    width: 100%;
+    background: url('../images/coffee_garden_logo.jpg') center, center;
+
+
+
+    animation-name: hero-zoom;
+    animation-duration: 5s;
+    animation-fill-mode: backwards;
+}
+
+@keyframes hero-zoom {
+    from {
+        transform: scale(1.5);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+#outer-box {
+    font-size: 150%;
+    font-family: Dancing Script, sans-serif;
+    color: #beb3b3;
+    text-align: center;
+    height: auto;
+    background-color: rgba(19, 22, 24, 0.7);
+    bottom: 325px;
+    right: 500px;
+    position: sticky;
 }
 
 /* Footer */

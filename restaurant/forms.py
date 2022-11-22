@@ -19,12 +19,12 @@ class OnlineForm(ModelForm):
         widget=forms.TextInput(attrs={'placeholder': 'Booking Name'}),
     )
 
-    email_address = forms.EmailField(
-        label='Email Address',
-        required=True,
-        validators=[validators.EmailValidator(message="Invalid Email")],
-        widget=forms.TextInput(attrs={'placeholder': 'Email Address'}),
-    )
+    # email_address = forms.EmailField(
+    #     label='Email Address',
+    #     required=True,
+    #     validators=[validators.EmailValidator(message="Invalid Email")],
+    #     widget=forms.TextInput(attrs={'placeholder': 'Email Address'}),
+    # )
 
     phone = forms.IntegerField(
         label='Contact Number',

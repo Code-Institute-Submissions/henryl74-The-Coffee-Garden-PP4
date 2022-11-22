@@ -4,7 +4,7 @@ from .models import Booking
 from .forms import OnlineForm
 from django.contrib import messages
 from django.views.generic.edit import FormView
-from .forms import OnlineForm
+from django.contrib.auth.decorators import login_required
 
 # Create your views here.
 
@@ -52,6 +52,16 @@ class BookingView(FormView):
         return render(request, 'thank_you.html')
 
 
+class ThankYou(generic.DetailView):
+    """
+    Renders the Thank You page in the browser
+    """
+    template_name = 'thank_you.html'
+
+    def get(self, request):
+        return render(request, 'thank_you.html')
+
+
 class Menu(generic.DetailView):
     """
     Renders the Menu page in the browser
@@ -93,7 +103,8 @@ class ListBookingView(generic.DetailView):
             return redirect('account_login')
 
 
-def update_booking_view(request, booking_id):
+@login_required
+def edit_booking_view(request, booking_id):
     """
     When a user is on the My Bookings page
     which can only be accessed if you are
@@ -105,21 +116,29 @@ def update_booking_view(request, booking_id):
     they will be redirected to the home page and a
     confimation message will appear.
     """
-    booking = get_object_or_404(Booking, id=booking_id)
-    if request.method == 'POST':
-        form = OnlineForm(data=request.POST, instance=booking)
-        if form.is_valid():
-            form.save()
-            # Pops up a message to the user when a booking is edited
-            messages.success(request, 'Your booking has been updated')
+
+    if request.user.is_authenticated:
+        booking = get_object_or_404(Booking, id=booking_id)
+        if booking.user == request.user:
+            if request.method == 'POST':
+                form = OnlineForm(data=request.POST, instance=booking)
+                if form.is_valid():
+                    form.save()
+                    # Pops up a message to the user when a booking is edited
+                    messages.success(request, 'Your booking has been updated')
+                    return redirect('/')
+        else:
+            messages.error(request, 'You do not have the authority to access this page!')
             return redirect('/')
+
     form = OnlineForm(instance=booking)
 
     return render(request, 'manage_bookings.html', {
         'form': form
-    })
+        })
 
 
+@login_required
 def delete_booking(request, booking_id):
     """
     When a user is on the My Bookings page
@@ -129,8 +148,13 @@ def delete_booking(request, booking_id):
     booking id, redirect the user back to the home page and
     pop up a confimation message will appear.
     """
-    booking = get_object_or_404(Booking, id=booking_id)
-    booking.delete()
-    # Pops up a message to the user when a bookings is cancelled
-    messages.success(request, 'Your booking has been cancelled')
-    return redirect('/')
+    if request.user.is_authenticated:
+        booking = get_object_or_404(Booking, id=booking_id)
+        if booking.user == request.user:
+            booking.delete()
+            # Pops up a message to the user when a bookings is cancelled
+            messages.success(request, 'Your booking has been cancelled')
+            return redirect('/')
+        else:
+            messages.error(request, 'You do not have the authority to access this page!')
+            return redirect('/')

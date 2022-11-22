@@ -50,7 +50,7 @@
                 if the an autherised user is logged in -->
                 {% if user.is_authenticated %}
                 <li class="nav-item">
-                    <a class="nav-link" href="{% url 'update_booking' %}">My Booking</a>
+                    <a class="nav-link" href="{% url 'update_booking' %}">My Bookings</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{% url 'account_logout' %}">Logout</a>
@@ -148,7 +148,7 @@
                             </a>
                         </li>
                     </ul>
-                    <h6 class="uppercase general-sub">Copyright 2022 &nbsp;<i class="fa fa-copyright"
+                    <h6 class="uppercase general-sub">Copyright 2022&nbsp;<i class="fa fa-copyright"
                             aria-hidden="true"></i></h6>
                 </div>
             </div>
