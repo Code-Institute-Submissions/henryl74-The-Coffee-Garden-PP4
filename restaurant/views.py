@@ -96,7 +96,7 @@ class ListBookingView(generic.DetailView):
             bookings = Booking.objects.filter(user=request.user)
 
             return render(request, 'update_booking.html', {
-                'booking': booking
+                'bookings': bookings
             }
             )
         else:

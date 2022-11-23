@@ -4,6 +4,15 @@ from django import forms
 from .models import Booking
 
 
+class DateInput(forms.DateInput):
+    """
+    This class provides a widget for use in the
+    booking form. It provides a calendar for users
+    to pick the booking date from
+    """
+    input_type = 'date'
+
+
 class OnlineForm(ModelForm):
     """
     This form is connected with the view
@@ -19,12 +28,12 @@ class OnlineForm(ModelForm):
         widget=forms.TextInput(attrs={'placeholder': 'Booking Name'}),
     )
 
-    # email_address = forms.EmailField(
-    #     label='Email Address',
-    #     required=True,
-    #     validators=[validators.EmailValidator(message="Invalid Email")],
-    #     widget=forms.TextInput(attrs={'placeholder': 'Email Address'}),
-    # )
+    email_address = forms.EmailField(
+        label='Email Address',
+        required=True,
+        validators=[validators.EmailValidator(message="Invalid Email")],
+        widget=forms.TextInput(attrs={'placeholder': 'Email Address'}),
+    )
 
     phone = forms.IntegerField(
         label='Contact Number',
@@ -41,5 +50,5 @@ class OnlineForm(ModelForm):
         # Except fot the user field
         exclude = ('user', )
         widgets = {
-            'date': forms.DateInput()
+            'date': DateInput()
         }

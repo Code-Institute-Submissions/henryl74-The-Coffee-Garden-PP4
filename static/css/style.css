@@ -219,6 +219,24 @@ header {
     padding-top: 71px;
 }
 
+/* My Bookings */
+
+.my_bookings_container {
+    width: 800px;
+    height: auto;
+    padding-left: 137px;
+    border-style: solid;
+    border-color: #ffffff;
+    color: #ffffff;
+    background-color: rgba(52, 56, 61, 0.7);
+    border-width: 1px;
+    margin: auto;
+}
+
+.card {
+    color: #232623;
+}
+
 /*Thank you page*/
 
 #thank-you-image {
