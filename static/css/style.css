@@ -28,12 +28,12 @@ header {
 
 
 #hero-outer {
-    height: 600px;
+    height: 630px;
     width: 100%;
     overflow: hidden;
 
     position: relative;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 #hero-image {
