@@ -2,9 +2,6 @@ from . import views
 from django.urls import path
 
 
-app_name = 'restaurant'
-
-
 urlpatterns = [
     path('', views.Home.as_view(), name='home'),
     path('booking/', views.BookingView.as_view(), name='booking'),
