@@ -33,24 +33,10 @@ class BookingView(FormView):
     form_class = OnlineForm
     success_url = '/thank_you/'
 
-    def booking_view(self, request):
-        return render(request, 'booking.html')
-
-    def post(self, request):
-        """
-        Uses the OnlineForm from forms.py
-        Checks if all the infromation in valid
-        and then saves it to the database.
-        Once saved users are redirected to the
-        Thank you page
-        """
-        form = OnlineForm(data=request.POST)
-        if form.is_valid():
-            booking = form.save(commit=False)
-            booking.user = request.user
-            booking.save()
-
-        return render(request, 'thank_you.html')
+    def form_valid(self, form):
+        form.instance.user = self.request.user
+        form.save()
+        return super().form_valid(form)
 
 
 class ThankYou(generic.DetailView):

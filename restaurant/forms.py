@@ -50,5 +50,5 @@ class OnlineForm(ModelForm):
         # Except fot the user field
         exclude = ('user', )
         widgets = {
-            'date': forms.DateInput()
+            'date': DateInput()
         }
