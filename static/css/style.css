@@ -228,13 +228,13 @@ header {
     border-style: solid;
     border-color: #ffffff;
     color: #ffffff;
-    background-color: rgba(11, 95, 199, 0.7);
+    background-color: rgba(52, 56, 61, 0.7);
     border-width: 1px;
     margin: auto;
 }
 
 .card {
-    color: #dcea1b;
+    color: #2c2f33;
 }
 
 /*Thank you page*/
