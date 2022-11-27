@@ -6,7 +6,7 @@
     <div class="my_bookings_container">
         <h2 class="stroke">My Bookings:</h2>
         <p class="stroke">To update a booking
-            please click on the buttons below.</p>
+            please select one of the options below.</p>
         <div class="row">
             {% for booking in bookings %}
             <div class="col-md-5">
@@ -16,7 +16,7 @@
                         <h6 class="card-subtitle mb-2 text-muted">{{ booking.date }} at
                             {{ booking.time }}</h6>
                         <div class='card-text'>
-                            <p>No. of People: {{ booking.number_of_people }}</p>
+                            <p>No. of People: {{ booking.customers }}</p>
                         </div>
                         <a href="/manage_bookings/{{booking.id}}" class="btn btn-success">Update</a>
                         <a href="/delete_booking/{{booking.id}}" class="btn btn-success">Cancel</a>
