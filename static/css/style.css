@@ -187,7 +187,7 @@ header {
 /* reservations page */
 
 .book_a_table {
-    background-image: url('../images/coffee_garden_logo.jpg');
+    background-image: url('../images/inside_background_image.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
