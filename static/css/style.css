@@ -20,8 +20,8 @@ header {
 .nav-item .nav-link {
     font-family: Dancing Script, sans-serif;
     font-size: large;
-    letter-spacing: 5px;
-    padding: 15px;
+    letter-spacing: 7px;
+    padding: 20px;
 }
 
 /* Main area on home page */
@@ -107,7 +107,6 @@ header {
 
 .menu_container {
     font-family: Dancing Script, sans-serif;
-    text-transform: uppercase;
     letter-spacing: 5px;
     text-align: center;
     width: auto;
@@ -116,17 +115,76 @@ header {
     border-style: solid;
     border-color: #ffffff;
     border-width: 1px;
-    background-color: rgba(52, 56, 61, 0.7);
+    background-color: rgba(66, 70, 70, 0.7);
     position: sticky;
 }
 
-#our-new-menu {
+#our-menu {
     text-align: center;
-    font-size: 300%;
+    font-size: 250%;
+    color: #FFFFFF;
 }
 
-.menu_options {
+.menu-item {
+    margin-top: 30px;
+}
+
+.menu-img {
+    height: 60px;
+    width: 60px;
+    border-radius: 60%;
+    float: left;
+    border: 3px solid #FFFFFF;
+}
+
+.menu-content {
+    margin-left: 85px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.menu-content::after {
+    content: ".......................""......................."".......................";
+    position: absolute;
+    left: 20px;
+    right: 0;
+    top: -4px;
+    z-index: 1;
     color: #FFFFFF;
+    font-family: Dancing Script, sans-serif;
+}
+
+.menu-content a {
+    padding-right: 10px;
+    background: #1a1814;
+    position: relative;
+    z-index: 3;
+    font-weight: 700;
+    color: white;
+    transition: 0.3s;
+}
+
+.menu-content a:hover {
+    color: #dbbd94;
+}
+
+.menu-content span {
+    background: #1a1814;
+    position: relative;
+    z-index: 3;
+    padding: 0 10px;
+    font-weight: 600;
+    color: #dbbd94;
+}
+
+.menu-ingredients {
+    margin-left: 85px;
+    font-style: italic;
+    font-size: 14px;
+    font-family: Dancing Script, sans-serif;
+    color: white;
 }
 
 /* login page*/
