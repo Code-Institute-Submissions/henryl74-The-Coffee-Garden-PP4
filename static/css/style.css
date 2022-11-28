@@ -25,8 +25,6 @@ header {
 }
 
 /* Main area on home page */
-
-
 #hero-outer {
     height: 630px;
     width: 100%;
@@ -100,7 +98,7 @@ header {
 /* Menu page */
 
 .background-image {
-    background-image: url('../images/coffee_garden_logo.jpg');
+    background-image: url('../images/cakes_varieties.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -115,7 +113,7 @@ header {
     border-style: solid;
     border-color: #ffffff;
     border-width: 1px;
-    background-color: rgba(66, 70, 70, 0.7);
+    background-color: rgba(42, 47, 47, 0.7);
     position: sticky;
 }
 
@@ -146,7 +144,7 @@ header {
 }
 
 .menu-content::after {
-    content: ".......................""......................."".......................";
+    content: "......................""......................""......................";
     position: absolute;
     left: 20px;
     right: 0;
@@ -190,7 +188,7 @@ header {
 /* login page*/
 
 .login-image {
-    background-image: url('../images/coffee_garden_logo.jpg');
+    background-image: url('../images/reservation_background.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -214,7 +212,7 @@ header {
 /* Log Out */
 
 .logout-image {
-    background-image: url('../images/coffee_garden_logo.jpg');
+    background-image: url('../images/reservation_background.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -223,7 +221,7 @@ header {
 /* register page*/
 
 .register-image {
-    background-image: url('../images/coffee_garden_logo.jpg');
+    background-image: url('../images/register_background.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -245,7 +243,7 @@ header {
 /* reservations page */
 
 .book_a_table {
-    background-image: url('../images/inside_background_image.jpg');
+    background-image: url('../images/reservation_background.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -300,7 +298,7 @@ header {
 #thank-you-image {
     height: 500px;
     width: 100%;
-    background: url('../images/coffee_garden_logo.jpg') center, center;
+    background: url('../images/thank_you_background.jpg') center, center;
 
 
 

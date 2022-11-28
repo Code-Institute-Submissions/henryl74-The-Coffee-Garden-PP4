@@ -28,7 +28,8 @@
     <!--Heading area, including company logo and Navbar functions -->
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #dbbd94;">
         <a href="{% url 'home' %}">
-            <img src="{% static 'images/restaurant_logo.jpeg' %}" style="height: 120px;" alt="logo">
+            <img class="img-thumbnail rounded-circle site-logo" src="{% static 'images/restaurant_logo.jpeg' %}"
+                style="height: 120px;" alt="logo">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
