@@ -19,7 +19,7 @@ header {
 /* Navigation bar */
 .nav-item .nav-link {
     font-family: Dancing Script, sans-serif;
-    font-size: large;
+    font-size: larger;
     letter-spacing: 7px;
     padding: 20px;
 }
@@ -86,7 +86,7 @@ header {
 #cover-text h3 {
     font-size: medium;
     color: #FFFFFF;
-    font-style: oblique;
+    font-style: italic;
     text-align: center;
 }
 
@@ -99,7 +99,7 @@ header {
 
 .background-image {
     background-image: url('../images/cakes_varieties.jpg');
-    background-size: cover;
+    background-size: 1900px 2000px;
     background-position: center;
 }
 
@@ -222,7 +222,7 @@ header {
 
 .register-image {
     background-image: url('../images/register_background.jpg');
-    background-size: cover;
+    background-size: 1950px 2000px;
     background-position: center;
     background-attachment: fixed;
 }
@@ -299,6 +299,7 @@ header {
     height: 500px;
     width: 100%;
     background: url('../images/thank_you_background.jpg') center, center;
+    background-size: 1950px 2300px;
 
 
 
@@ -335,8 +336,13 @@ header {
     margin-top: 10px;
 }
 
-#footer .fa {
-    color: #b38d57;
+#footer .fa-brands {
+    color: #bf9c6a;
+    font-size: large;
+}
+
+#footer .fa-solid {
+    color: #bf9c6a;
     font-size: large;
 }
 
