@@ -9,7 +9,9 @@ urlpatterns = [
     # path(
     #     'manage_bookings/',
     #     views.ListBookingView.as_view(), name='manage_bookings'),
-    path('thank_you/', views.ThankYou.as_view(), name='thank_you'),
+    path(
+        'booking_confirmation/',
+        views.BookingConfirmation.as_view(), name='booking_confirmation'),
     path(
         'update_booking/',
         views.ListBookingView.as_view(), name='update_booking'),

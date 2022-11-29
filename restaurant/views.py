@@ -31,7 +31,7 @@ class BookingView(FormView):
     """
     template_name = 'booking.html'
     form_class = OnlineForm
-    success_url = '/thank_you/'
+    success_url = '/booking_confirmation/'
 
     def form_valid(self, form):
         form.instance.user = self.request.user
@@ -39,14 +39,14 @@ class BookingView(FormView):
         return super().form_valid(form)
 
 
-class ThankYou(generic.DetailView):
+class BookingConfirmation(generic.DetailView):
     """
-    Renders the Thank You page in the browser
+    Renders a Booking Confirmation page in the browser
     """
-    template_name = 'thank_you.html'
+    template_name = 'booking_confirmation.html'
 
     def get(self, request):
-        return render(request, 'thank_you.html')
+        return render(request, 'booking_confirmation.html')
 
 
 class Menu(generic.DetailView):
