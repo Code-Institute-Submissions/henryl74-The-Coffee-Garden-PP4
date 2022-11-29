@@ -18,6 +18,12 @@
                         <div class='card-text'>
                             <p>No. of People: {{ booking.customers }}</p>
                         </div>
+                        <div class='card-text'>
+                            <p>Phone: {{ booking.phone }}</p>
+                        </div>
+                        <div class='card-text'>
+                            <p>Email: {{ booking.email }}</p>
+                        </div>
                         <a href="/manage_bookings/{{booking.id}}" class="btn btn-success">Update</a>
                         <a href="/delete_booking/{{booking.id}}" class="btn btn-success">Cancel</a>
                     </div>
