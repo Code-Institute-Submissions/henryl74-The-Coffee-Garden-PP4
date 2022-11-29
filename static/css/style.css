@@ -22,6 +22,12 @@ header {
     font-size: larger;
     letter-spacing: 7px;
     padding: 20px;
+    color: #FFFFFF;
+}
+
+.nav-item .nav-link:hover {
+    color: rgb(96, 92, 92);
+    text-decoration: none;
 }
 
 /* Main area on home page */
