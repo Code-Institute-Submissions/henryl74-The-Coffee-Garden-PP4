@@ -110,7 +110,7 @@ header {
 /* ---------- Menu page ---------- */
 
 .background-image {
-    background-image: url('../images/cakes_varieties.jpg');
+    background-image: url('https://res.cloudinary.com/dkvxntfhc/image/upload/v1669843160/static/images/cakes_varieties.277a859d6a6b.jpg');
     background-size: 1900px 2000px;
     background-position: center;
 }
@@ -200,7 +200,7 @@ header {
 /* ---------- login page ---------- */
 
 .login-image {
-    background-image: url('../images/reservation_background.jpg');
+    background-image: url('https://res.cloudinary.com/dkvxntfhc/image/upload/v1669843152/static/images/reservation_background.6d8e957c919f.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -224,7 +224,7 @@ header {
 /* ---------- Log Out ---------- */
 
 .logout-image {
-    background-image: url('../images/reservation_background.jpg');
+    background-image: url('https://res.cloudinary.com/dkvxntfhc/image/upload/v1669843152/static/images/reservation_background.6d8e957c919f.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -233,7 +233,7 @@ header {
 /* ---------- Register page ----------*/
 
 .register-image {
-    background-image: url('../images/register_background.jpg');
+    background-image: url('https://res.cloudinary.com/dkvxntfhc/image/upload/v1669843166/static/images/register_background.273edf4c5b08.jpg');
     background-size: 1950px 2000px;
     background-position: center;
     background-attachment: fixed;
@@ -255,7 +255,7 @@ header {
 /* ---------- Reservations page ---------- */
 
 .book_a_table {
-    background-image: url('../images/reservation_background.jpg');
+    background-image: url('https://res.cloudinary.com/dkvxntfhc/image/upload/v1669843152/static/images/reservation_background.6d8e957c919f.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -310,7 +310,7 @@ header {
 #booking-confirmation-image {
     height: 500px;
     width: 100%;
-    background: url('../images/booking_confirmation_background.jpg') center, center;
+    background: url('https://res.cloudinary.com/dkvxntfhc/image/upload/v1669844241/static/images/booking_confirmation_background.9bd38e1bdf17.jpg') center, center;
     background-size: 1950px 2300px;
 
 
