@@ -10,17 +10,18 @@
     text-decoration: none;
 }
 
-/* Header */
+/* ---------- Header ---------- */
 
 header {
     margin: 0;
 }
 
-/* Navigation bar */
+/* ---------- Navigation bar ---------- */
+
 .nav-item .nav-link {
     font-family: Dancing Script, sans-serif;
     font-size: larger;
-    letter-spacing: 7px;
+    letter-spacing: 6px;
     padding: 20px;
     color: #FFFFFF;
 }
@@ -30,7 +31,8 @@ header {
     text-decoration: none;
 }
 
-/* Main area on home page */
+/* ---------- Main Home Page ---------- */
+
 #hero-outer {
     height: 630px;
     width: 100%;
@@ -101,7 +103,7 @@ header {
     color: #FFFFFF;
 }
 
-/* Menu page */
+/* ---------- Menu page ---------- */
 
 .background-image {
     background-image: url('../images/cakes_varieties.jpg');
@@ -191,7 +193,7 @@ header {
     color: white;
 }
 
-/* login page*/
+/* ---------- login page ---------- */
 
 .login-image {
     background-image: url('../images/reservation_background.jpg');
@@ -215,7 +217,7 @@ header {
 
 }
 
-/* Log Out */
+/* ---------- Log Out ---------- */
 
 .logout-image {
     background-image: url('../images/reservation_background.jpg');
@@ -224,7 +226,7 @@ header {
     background-attachment: fixed;
 }
 
-/* register page*/
+/* ---------- Register page ----------*/
 
 .register-image {
     background-image: url('../images/register_background.jpg');
@@ -246,7 +248,7 @@ header {
     text-align: center;
 }
 
-/* reservations page */
+/* ---------- Reservations page ---------- */
 
 .book_a_table {
     background-image: url('../images/reservation_background.jpg');
@@ -281,7 +283,7 @@ header {
     padding-top: 71px;
 }
 
-/* My Bookings */
+/* ---------- My Bookings ---------- */
 
 .my_bookings_container {
     width: 800px;
@@ -299,7 +301,7 @@ header {
     color: #2c2f33;
 }
 
-/*Thank you page*/
+/* ---------- Booking Confirmation ---------- */
 
 #thank-you-image {
     height: 500px;
@@ -336,7 +338,7 @@ header {
     position: sticky;
 }
 
-/* Footer */
+/* ---------- Footer ---------- */
 
 #footer {
     margin-top: 10px;
@@ -357,7 +359,8 @@ header {
 }
 
 
-/* Media Quiries */
+/* ---------- Media Quiries ---------- */
+
 @media screen and (max-width: 1300px) {
     .container {
         height: auto;
@@ -374,7 +377,7 @@ header {
 
 }
 
-/* Media quiries for tablet sized screens */
+/* ---------- Media quiries for tablet sized screens ---------- */
 @media screen and (max-width: 950px) {
     #cover-text {
         bottom: 270px;
@@ -392,7 +395,7 @@ header {
 
 }
 
-/* Media queries for mobile */
+/* ---------- Media queries for mobile ---------- */
 
 @media screen and (max-width:650px) {
     #cover-text {
@@ -430,7 +433,7 @@ header {
 
 }
 
-/* Media Query for small mobile devices*/
+/* ---------- Media Query for small mobile devices ---------- */
 
 @media screen and (max-width:360px) {
     .menu_container {
