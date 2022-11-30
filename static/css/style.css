@@ -18,6 +18,10 @@ header {
 
 /* ---------- Navigation bar ---------- */
 
+.navbar {
+    background-color: #e7c290;
+}
+
 .nav-item .nav-link {
     font-family: Dancing Script, sans-serif;
     font-size: larger;
@@ -26,10 +30,10 @@ header {
     color: #FFFFFF;
 }
 
-.nav-item .nav-link:hover {
+/* .nav-item .nav-link:hover {
     color: rgb(96, 92, 92);
     text-decoration: none;
-}
+} */
 
 /* ---------- Main Home Page ---------- */
 
