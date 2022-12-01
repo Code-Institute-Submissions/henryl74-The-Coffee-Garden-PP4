@@ -218,7 +218,6 @@ header {
     border-width: 1px;
     margin-top: 1px;
     text-align: center;
-
 }
 
 /* ---------- Log Out ---------- */
@@ -382,6 +381,7 @@ header {
 }
 
 /* ---------- Media quiries for tablet sized screens ---------- */
+
 @media screen and (max-width: 950px) {
     #cover-text {
         bottom: 270px;
