@@ -22,7 +22,7 @@ header {
 }
 
 .nav-item .nav-link {
-    font-family: Dancing Script, sans-serif;
+    font-family: "Dancing Script", sans-serif;
     font-size: larger;
     letter-spacing: 6px;
     padding: 20px;
@@ -70,7 +70,7 @@ header {
 
 #cover-text {
     font-size: 150%;
-    font-family: Dancing Script, sans-serif;
+    font-family: "Dancing Script", sans-serif;
     text-transform: uppercase;
     letter-spacing: 5px;
 
@@ -115,7 +115,7 @@ header {
 }
 
 .menu_container {
-    font-family: Dancing Script, sans-serif;
+    font-family: "Dancing Script", sans-serif;
     letter-spacing: 5px;
     text-align: center;
     width: auto;
@@ -162,7 +162,7 @@ header {
     top: -4px;
     z-index: 1;
     color: #FFFFFF;
-    font-family: Dancing Script, sans-serif;
+    font-family: "Dancing Script", sans-serif;
 }
 
 .menu-content a {
@@ -192,7 +192,7 @@ header {
     margin-left: 85px;
     font-style: italic;
     font-size: 14px;
-    font-family: Dancing Script, sans-serif;
+    font-family: "Dancing Script", sans-serif;
     color: white;
 }
 
@@ -330,7 +330,7 @@ header {
 
 #outer-box {
     font-size: 150%;
-    font-family: Dancing Script, sans-serif;
+    font-family: "Dancing Script", sans-serif;
     color: #beb3b3;
     text-align: center;
     height: auto;
