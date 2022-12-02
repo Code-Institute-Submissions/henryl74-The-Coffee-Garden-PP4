@@ -115,7 +115,8 @@ def edit_booking_view(request, booking_id):
                     messages.success(request, 'Your booking has been updated')
                     return redirect('/')
         else:
-            messages.error(request, 'You do not have the authority to access this page!')
+            messages.error(
+                request, 'You do not have the authority to access this page!')
             return redirect('/')
 
     form = OnlineForm(instance=booking)
@@ -143,5 +144,6 @@ def delete_booking(request, booking_id):
             messages.success(request, 'Your booking has been cancelled')
             return redirect('/')
         else:
-            messages.error(request, 'You do not have the authority to access this page!')
+            messages.error(
+                request, 'You do not have the authority to access this page!')
             return redirect('/')
