@@ -27,7 +27,7 @@
 
 <body class="d-flex flex-column h-100 main-bg">
 
-    <!--Heading area, including company logo and Navbar functions -->
+    <!--Heading area, restaurant logo and Navbar functions -->
     <nav class="navbar navbar-expand-lg">
         <a href="{% url 'home' %}">
             <img class="img-thumbnail rounded-circle site-logo" src="{% static 'images/restaurant_logo.jpeg' %}"
@@ -51,7 +51,7 @@
                     <a class="nav-link" href="{% url 'booking' %}">Reservation</a>
                 </li>
 
-                <!--The My Bookings and Log out tabs will only appear
+                <!--My Bookings and Log out tabs will only appear
                 if the an autherised user is logged in -->
                 {% if user.is_authenticated %}
                 <li class="nav-item">
@@ -61,8 +61,8 @@
                     <a class="nav-link" href="{% url 'account_logout' %}">Logout</a>
                 </li>
 
-                <!--Otherwise they will be asked to either
-                log in or register -->
+                <!-- Alternatively user will be asked to either
+                register or log in -->
                 {% else %}
                 <li class="nav-item">
                     <a class="nav-link" href="{% url 'account_signup' %}">Register</a>
@@ -75,7 +75,7 @@
         </div>
     </nav>
 
-    <!--Code taken for CI walkthrough project-->
+    <!-- Code borrowed Credit: CI walkthrough project -->
     <div>
         <div class="message-container">
             <div class="row">
@@ -101,7 +101,7 @@
         {% endblock content %}
     </main>
 
-    <!--Footer section including social media and email-->
+    <!-- Footer Section -->
     <section id="footer">
         <footer class="container-fluid">
             <div id="footer-details" class="row">
@@ -164,8 +164,8 @@
             </div>
         </footer>
     </section>
-    <!--JavaScript function that controls the 
-    dismissile of the alters users receive -->
+    <!----- JavaScript function controls the 
+    dismissal of the alters users receive ----->
     <script>
         setTimeout(function () {
             let messages = document.getElementById('msg');
@@ -173,7 +173,7 @@
             alert.close();
         }, 2000);
     </script>
-    <!-- Imported scripts from bootstrap -->
+    <!----- Scripts imported from bootstrap ----->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script>
