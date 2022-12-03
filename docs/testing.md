@@ -170,3 +170,47 @@ views.py
 #### **Mobile**
 
 ![Log Out Page Mobile Lighthoue Validation](./readme-testing-images/lighthouse_log_out_mobile.png)
+
+* ## Manual Testing
+
+    * In addition to the other tests, I have conducted a manual check list for myself to carry out to make sure that everything is working as intended.
+
+| Status | **Navigation Bar Logged Out**
+|:-------:|:--------|
+| &check; | Clicking the navbar logo loads the home page
+| &check; | That the navbar shows the tabs Home, Menu, Reservation, Register, Login
+| &check; | Clicking the Home tab on the navbar loads the home page
+| &check; | Clicking the Menu tab on the navbar loads the menu page
+| &check; | Clicking the Reservation tab on the navbar loads the reservation page
+| &check; | Clicking the Login tab on the navbar loads the login page
+
+| Status | **Navigation Bar - User Logged In**
+|:-------:|:--------|
+| &check; | That the navbar shows the username of the logged in user
+| &check; | Clicking the navbar logo loads the home page
+| &check; | That the navbar shows the tabs Home, Menu, Reservation, My Bookings, Logout if the user is logged in
+| &check; | Clicking the Home tab on the navbar loads the home page
+| &check; | Clicking the Reservation tab on the navbar loads the Book a Table page
+| &check; | Clicking the My Bookings tab on the navbar loads the user's bookings made page
+| &check; | Clicking the Logout tab on the navbar loads the logout page
+| &check; | That the Logout button once clicked displays a logout message
+
+
+| Status | **Navigation Bar - Admin (superuser) User Logged In**
+|:-------:|:--------|
+| &check; | Clicking the navbar Django adminitration logo loads the home page
+| &check; | That the navbar displays a welcome message, tabs to View Site, Change Password, Log Out
+| &check; | That the navbar shows the username of the logged in user
+| &check; | Clicking the Accounts tab on the admin panel loads the Email addresses
+| &check; | Clicking the Email Addresses tab, it will load the user emails registered
+| &check; | Clicking the Restaurant tab on the admin panel loads the bookings tab
+| &check; | Clicking the Booking tab, it will list all the existing reservations that have been made
+| &check; | Clicking the Add Booking, allows the admin user to add a booking to an specific user
+| &check; | Clicking on an existing Booking, allows the admin user to delete or update that reservation
+
+| Status | **Footer - User Logged Out/In**
+|:-------:|:--------|
+| &check; | That the Footer displays the Opening Hours, Contact Details, and Social Media icons
+| &check; | Clicking the Facebook icon loads the instagram home page in a new tab
+| &check; | Clicking the Instagram icon loads the facebook home page in a new tab
+| &check; | Clicking the TikTok icon loads the twitter home page in a new tab
