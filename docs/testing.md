@@ -19,8 +19,38 @@ There was however an error, and some warnings issues regarding the use of css va
 
 ![css code validator](./readme-testing-images/bootstrap_warnings.png)
 
-![css code validator](./readme-testing-images/font_awesome%20warnings.jpeg)
+![css code validator](./readme-testing-images/font_awesome_warnings.jpeg)
+
+The following warnings messages were fixed for html and css while validating my code:
+
+* #### HTML
+
+![html code validator](./readme-testing-images/html_warning_fixed.png)
+
+* #### CSS
+
+![css code validator](./readme-testing-images/font_family_warning_fixed.png)
 
 
 * ### Javascript Code Validator
     * Using [jshint](https://jshint.com/), I ran my jquery/javascript code and found no errors.
+
+
+* ### Python Validation
+
+    * All Python code was validated using CI Python Linter [https://pep8ci.herokuapp.com/](https://pep8ci.herokuapp.com/) and the following indentation errors were found and fixed accordingly.
+
+manage.py
+
+![CI Python Linter](./readme-testing-images/manage_py_fixed.png)
+
+models.py
+
+![CI Python Linter](./readme-testing-images/phone_models_py_fixed.png)
+
+views.py
+
+![CI Python Linter](./readme-testing-images/views_py_fixed.png)
+
+* ### Lighthouse Testing
+    * All pages were checked on lighthouse with the results between % and % for each page on mobile and desktop.
