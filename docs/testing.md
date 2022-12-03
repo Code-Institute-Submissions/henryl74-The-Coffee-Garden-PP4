@@ -5,8 +5,33 @@ Testing was done throughout the process while developing the project by the use 
 
 * ## Html Code Validator
     * All the HTML pages code ran through [html code validator](https://validator.w3.org/#validate_by_uri) and there were no issues found.
-        
-![html code validator](./readme-testing-images/html_w3c_result.png)
+
+### Home Page   
+![html code validator](./readme-testing-images/html_home_w3c_result.png)
+
+### Menu Page
+![html code validator](./readme-testing-images/html_menu_w3c_result.png)
+
+### Reservation Page
+![html code validator](./readme-testing-images/html_reservation_w3c_result.png)
+
+### Register Page
+![html code validator](./readme-testing-images/html_register_w3c_result.png)
+
+### Login Page
+![html code validator](./readme-testing-images/html_login_w3c_result.png)
+
+### Book a Table Page
+![html code validator](./readme-testing-images/html_book_a_table_w3c_result.png)
+
+### Booking Confirmation Page
+![html code validator](./readme-testing-images/html_booking_confirmation_w3c_result.png)
+
+### My Bookings Page
+![html code validator](./readme-testing-images/html_my_bookings__w3c_result.png)
+
+### Log Out Page
+![html code validator](./readme-testing-images/html_logout_w3c_result.png)
 
 * ## CSS Code Validator
     * All the CSS code ran through using [css code validator](https://validator.w3.org/#validate_by_input) and there were no issues found.
