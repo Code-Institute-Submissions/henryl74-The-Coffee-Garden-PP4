@@ -8,26 +8,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!--importing Bootstrap CSS-->
+    <!-- importing Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <!--importing font awesome script-->
+    <!-- importing font awesome script -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
 
-    <!--Link to the Favicon for the site-->
+    <!-- Link to the Favicon for the site-->
     <link rel="icon" href="{% static 'images/favicon.png' %}">
 
-    <!--Link to the CSS file-->
+    <!-- Link to the CSS file-->
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <title>The Coffee Garden</title>
 </head>
 
 <body class="d-flex flex-column h-100 main-bg">
 
-    <!--Heading area, restaurant logo and Navbar functions -->
+    <!-- Heading area, restaurant logo and Navbar functions -->
     <nav class="navbar navbar-expand-lg">
         <a href="{% url 'home' %}">
             <img class="img-thumbnail rounded-circle site-logo" src="{% static 'images/restaurant_logo.jpeg' %}"
@@ -51,7 +51,7 @@
                     <a class="nav-link" href="{% url 'booking' %}">Reservation</a>
                 </li>
 
-                <!--My Bookings and Log out tabs will only appear
+                <!-- My Bookings and Log out tabs will only appear
                 if the an autherised user is logged in -->
                 {% if user.is_authenticated %}
                 <li class="nav-item">
