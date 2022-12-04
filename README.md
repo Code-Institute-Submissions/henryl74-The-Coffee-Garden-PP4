@@ -8,7 +8,7 @@ Using the principles of UX design and the agile development methodology, this pr
 
 You can view the live deployed game here: <a href="https://the-coffee-garden.herokuapp.com/" target="_blank"> The Coffee Garden </a>
 
-![The Coffee Garden amiresponsive]()
+![The Coffee Garden](./docs/readme-testing-images/live_site.jpeg)
 
 # Contents
 
@@ -121,47 +121,55 @@ My project consists of nine webpages:
 
 - The home section makes the first impression of the site to the visitor. The main background image gives a primary idea to the user of what products are sold here, and how they are prepared; it also displays the main contact details of the restaurant located at the bottom of the page as footer.
 
-![Navbar](./docs/readme-testing-images/navigation_bar.jpeg)
+![Navbar](./docs/readme-testing-images/home_page.jpeg)
 
 ### Menu page
 
 - The menu section comes with images and descriptions of a few different options available at this restaurant, it also displays the main contact details of the restaurant located at the bottom of the page as footer.
 
-![Navbar](./docs/readme-testing-images/menu_page.jpeg)
+![Menu](./docs/readme-testing-images/menu_page.jpeg)
 
 ### Reservation Page
 
 - On the booking page the customer it's prompted to login to continue with the online booking.
 
-![Navbar](./docs/readme-testing-images/reservation_page.jpeg)
+![Reservations](./docs/readme-testing-images/reservation_page.jpeg)
 
 #### Register page
 
 - In this section, the user can create an account to make a registration as well as click on the log-in link to be able to access the site as a new or existing user.  
 
-![Navbar](./docs/readme-testing-images/register_page.jpeg)
+![Register](./docs/readme-testing-images/register_page.jpeg)
 
 ### Login page
 
 - The user can access the site as a registered user to proceed with his/her online booking.  
 
-![Navbar](./docs/readme-testing-images/login_page.jpeg)
+![Login](./docs/readme-testing-images/login_page.jpeg)
 
 #### Book a Table (Reservation Page)
 
 - In this section, the user can proceed with his/her to book a table, provide his/her name, contact details, number of people, time, and date for the reservation.
 
+![Book a Table](./docs/readme-testing-images/book_a_table_page.jpeg)
+
 ### Booking confirmation page
 
 - This section displays a thank you booking confirmation message, it gives the user the option to either perform updates to the booking that just has been made or view the menu again through the links provided within the message.
+
+![Booking Confirmation](./docs/readme-testing-images/booking_confirmation_page.jpeg)
 
 ### My Bookings page
 
 - The current bookings for a customer are shown on the mybooking page, that way the customer can get an overview of all bookings and check the date and time, etc for each booking. On this page, the customer can also click on the "Update" button and make necessary changes to the booking that will be saved and shown on the mybooking page. The customer can also delete a booking by clicking on the "Cancel" button. It will then disappear from the list of reservations.
 
+![My Bookings](./docs/readme-testing-images/my_bookings_page.jpeg)
+
 ### Logout page
 
 - Here the user can end his online session, this section also displays a message asking the customer if he wants to proceed with this action.
+
+![Logout](./docs/readme-testing-images/logout_page.jpeg)
 
 [Back to top](<#contents>)
 
@@ -230,6 +238,28 @@ I have included testing details in a separate document called [Testing.md](./doc
 [Back to top](<#contents>)
 
 ## Bugs Fixed
+
+- Register page for laptops had a css issue with the container, I fixed it by removing the width, margin-left, and added margin: 0 7% within the css file.
+
+![Register Page Bug](./docs/readme-testing-images/register_bug.jpeg)
+
+- Menu, the images were not displaying, I fixed it by changing the path to absolute on each image in the html file.
+
+![Menu Page Bug](./docs/readme-testing-images/menu_images_bug.jpeg)
+
+- Home Page rendiring error, I fixed it by udating the path under urls.py
+
+![Home Page Bug](./docs/readme-testing-images/home_error_template.jpeg)
+
+- Update Booking rendiring error, I fixed it by udating the path under urls.py
+
+![Update Booking Bug](./docs/readme-testing-images/edit_booking.jpeg)
+
+- Nav bar brightness issue, this was down to a bootstrap issue, I fixed it by substituting the span for a fontawesome icon instead.
+
+![Nav bar brightness](./docs/readme-testing-images/nav_bar_brightness.jpeg)
+
+![Nav bar brightness](./docs/readme-testing-images/font_awesome_fix.jpeg)
 
 [Back to top](<#contents>)
 
@@ -342,9 +372,36 @@ In the IDE:
 
 ## Credits
 
+- [Code Institute walkthrough](https://codeinstitute.net/) as inspiration and code examples, the code institute walkthroughs "Hello Django" and "I Think Therefore I Blog" was used.
+
+- [Django Documenation](https://www.djangoproject.com/) was used to provide examples of code solutions and Django functionality.
+
+- [Bootstrap Documenation](https://getbootstrap.com/) was used to provide examples of Bootstrap functionality and building blocks.
+
+- [Django YouTube Tutorial on how to create a Blog](https://www.youtube.com/watch?v=n-FTlQ7Djqc&list=PL4cUxeGkcC9ib4HsrXEYpQnTOTZE1x0uc)
+
+- [Python Django Web Framework - Full Course for Beginners](https://www.youtube.com/watch?v=F5mRW0jo-U4)
+
+- [Python Django 7 Hour Course](https://www.youtube.com/watch?v=PtQiiknWUcI)
+
+- [Stackoverflow](https://stackoverflow.com/)
+
+- [Slack](https://slack.com/intl/en-gb/) community support.
+
+- Code Institute - Tutor Assistance, big thank you for all your support, suggestions and help!
+
+
 [Back to top](<#contents>)
 
 ## Acknowledgements
+
+- Again, the online tutors for all their help.
+- The Code Institute slack community.
+- All my classmates for constantly sharing new ideas in our dedicated slack channel.
+- Stack Overflow question and answer website.
+- My mentor Chris Quinn, big thank you for all your all your amazing guidance given, I learned a lot throughout our sessions.
+- My family, THANK YOU for being part of the team.
+- Last but not least Code Institute student support team, for being there for us.
 
 [Back to top](<#contents>)
 
