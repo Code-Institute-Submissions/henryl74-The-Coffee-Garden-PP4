@@ -109,14 +109,55 @@ My project consists of nine webpages:
 - My Bookings page.
 - Logout page.
 
-### The Navigation Bar  
+### The Navigation Bar
+
 - The navigation bar shows all the sections that the user can enter and provides a quick and easy means of navigating the site.
 - The navigation bar bar is very responsive and user friendly, it has an additional hover effect to help the user with his/her selection.
 - The restaurant logo located on the the left hand corner of the navigation bar, helps the user to go back to the home page by clicking on it.
 
 ![Navbar](./docs/readme-testing-images/navigation_bar.jpeg)
 
+### Home or landing page
 
+- The home section makes the first impression of the site to the visitor. The main background image gives a primary idea to the user of what products are sold here, and how they are prepared; it also displays the main contact details of the restaurant located at the bottom of the page as footer.
+
+![Navbar](./docs/readme-testing-images/navigation_bar.jpeg)
+
+### Menu page
+
+- The menu section comes with images and descriptions of a few different options available at this restaurant, it also displays the main contact details of the restaurant located at the bottom of the page as footer.
+
+![Navbar](./docs/readme-testing-images/menu_page.jpeg)
+
+### Reservation Page
+
+- On the booking page the customer it's prompted to login to continue with the online booking.
+
+![Navbar](./docs/readme-testing-images/reservation_page.jpeg)
+
+#### Register page
+
+- In this section, the user can create an account to make a registration as well as click on the log-in link to be able to access the site as a new or existing user.  
+
+![Navbar](./docs/readme-testing-images/register_page.jpeg)
+
+### Login page
+
+- The user can access the site as a registered user to proceed with his/her online booking.  
+
+![Navbar](./docs/readme-testing-images/login_page.jpeg)
+
+#### Book a Table (Reservation Page)
+
+- In this section, the user can proceed with his/her to book a table, provide his/her name, contact details, number of people, time, and date for the reservation.
+
+### Booking confirmation page
+
+- This section displays a thank you booking confirmation message, it gives the user the option to either perform updates to the booking that just has been made or view the menu again through the links provided within the message.
+
+### My Bookings page
+
+### Logout page
 
 [Back to top](<#contents>)
 
@@ -130,7 +171,7 @@ My project consists of nine webpages:
 
 # Testing
 
-I have included testing details in a separate document called [Testing.md](testing.md)
+I have included testing details in a separate document called [Testing.md](./docs/testing.md)
 
 [Back to top](<#contents>)
 
