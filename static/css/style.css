@@ -238,7 +238,7 @@ header {
 }
 
 .square-container {
-    width: 1100px;
+    margin: 0 7%;
     height: auto;
     padding-left: 170px;
     border-style: solid;
@@ -246,7 +246,6 @@ header {
     color: #ffffff;
     background-color: rgba(52, 56, 61, 0.7);
     border-width: 1px;
-    margin-left: 450px;
     text-align: center;
 }
 
