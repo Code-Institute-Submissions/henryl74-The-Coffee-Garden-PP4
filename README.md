@@ -18,7 +18,7 @@ You can view the live deployed game here: <a href="https://the-coffee-garden.her
 * [User Stories](#user-stories)
 * [Design](#design)
 * [Database Schema](#database-schema)
-* [The Coffe Garden Flow Chart](<#the-coffee-garden-flow-chart>)
+* [The Coffee Garden Flow Chart](<#the-coffee-garden-flow-chart>)
 * [Features](#features)
 * [Future Features](<#future-features>)
 * [Technologies Used](#technologies-used)
