@@ -157,15 +157,69 @@ My project consists of nine webpages:
 
 ### My Bookings page
 
+- The current bookings for a customer are shown on the mybooking page, that way the customer can get an overview of all bookings and check the date and time, etc for each booking. On this page, the customer can also click on the "Update" button and make necessary changes to the booking that will be saved and shown on the mybooking page. The customer can also delete a booking by clicking on the "Cancel" button. It will then disappear from the list of reservations.
+
 ### Logout page
+
+- Here the user can end his online session, this section also displays a message asking the customer if he wants to proceed with this action.
 
 [Back to top](<#contents>)
 
 ## Future Features
 
+Due to time constraints, the following features will be considered for future implementation on a separate project:
+
+- Blog
+- Gallery
+- Recipe videos 
+- Newsletter Sign up
+
 [Back to top](<#contents>)
 
-## Technologies Used
+* # Technologies Used
+
+    * ## Languages Used
+        * [HTML](https://www.w3schools.com/html/)
+        * [CSS](https://www.w3schools.com/css/)
+        * [Javascript](https://en.wikipedia.org/wiki/JavaScript)
+        * [Python](https://www.python.org/)
+
+    * ## Libraries/Framework Used
+        * [Django](https://www.djangoproject.com/)
+        * [Bootstrap](https://getbootstrap.com/)
+        * [jQuery](https://jquery.com/)
+
+    * ### Libraries/Module Installed
+        * asgiref==3.5.2
+        * cloudinary==1.30.0
+        * dj-database-url==0.5.0
+        * dj3-cloudinary-storage==0.0.6
+        * Django==3.2.16
+        * django-allauth==0.51.0
+        * gunicorn==20.1.0
+        * oauthlib==3.2.2
+        * psycopg2==2.9.5
+        * PyJWT==2.6.0
+        * python3-openid==3.2.0
+        * pytz==2022.6
+        * requests-oauthlib==1.3.1
+        * sqlparse==0.4.3
+
+    * ## Other Technologies
+        * [Postgres Database](https://www.postgresql.org/)
+        * [W3School](https://www.w3schools.com/)
+        * [Stackoverflow](https://stackoverflow.com/)
+        * [Git](https://git-scm.com/)
+        * [Github](https://github.com/)
+        * [Gitpod workspace](https://gitpod.io/workspaces)
+        * [Heroku](https://dashboard.heroku.com/apps)
+        * [Flowchart](https://lucid.app/documents#/documents?folder_id=home)
+        * [jshint](https://jshint.com/)
+        * [HTML code validator](https://validator.w3.org/)
+        * [CSS code validator](https://jigsaw.w3.org/css-validator/)
+        * [Font Awsome](https://fontawesome.com/)
+        * [Google Fonts](https://fonts.google.com/)
+        * [Slack](https://slack.com/intl/en-gb/)
 
 [Back to top](<#contents>)
 
@@ -180,6 +234,109 @@ I have included testing details in a separate document called [Testing.md](./doc
 [Back to top](<#contents>)
 
 ## Deployment
+
+Git and GitHub are used for version control. Python is the backend language, and can't be displayed with GitHub alone, To live preview my project, I used Heroku.
+
+## Deployment to Heroku
+
+### 1. Creating the Django Project
+* If development if being done locally: Activate your virtual environment
+* To ensure the virtual environment is not tracked by version control, add .venv to the .gitignore file.
+* Install Django and gunicorn: `pip install django gunicorn`
+* Install supporting database libraries dj_database_url and psycopg2 library: `pip install dj_database_url psycopg2`
+* Install Cloudinary libraries to manage static files: `pip install dj-3-cloudinary-storage`
+* Create file for requirements: `pip freeze --local > requirements.txt`
+* Create project:`django-admin startproject project_name .`
+* Create app: `python manage.py startapp app_name`
+* Add app to list of `installed apps` in settings.py file: `'app_name'`
+* Migrate changes: `python manage.py migrate`
+* Test server works locally: `python manage.py runserver`
+
+### 2. Create your Heroku app
+* Navigate to the Heroku website
+* Create a Heroku account by entering your email address and a password (or login if you have one already).
+* Activate the account through the authentication email sent to your email account
+* Click the **new button** on the top right corner of the screen and select create a new app from the dropdown menu.
+* Enter a unique name for the application.
+* Select the appropriate region for the application.
+* Click create app
+* In the Heroku dashboard click on the Resources tab
+* Scroll down to Add-Ons, search for and select 'Heroku Postgres' / Now replaced by 'ElephantSQL'
+* In the Settings tab, scroll down to 'Reveal Config Vars' and copy the text in the box beside DATABASE_URL.
+
+### 3. Set up Environment Variables
+* In you IDE create a new env.py file in the top level directory
+* Add env.py to the .gitignore file
+* In env.py import the os library
+* In env.py add `os.environ["DATABASE_URL"]` = "Paste in the text link copied above from Heroku DATABASE_URL"
+* In env.py add `os.environ["SECRET_KEY"] = "Make up your own random secret key"`
+* In Heroku Settings tab Config Vars enter the same secret key created in env.py by entering 'SECRET_KEY' in the box for 'KEY' and your randomly created secret key in the 'value' box.
+
+### 4. Setting up settings.py
+
+* In your Django 'settings.py' file type:
+
+ ```
+ from pathlib import Path
+ import os
+ import dj_database_url
+
+ if os.path.isfile("env.py"):
+  import env
+ ```
+* Remove the default insecure secret key in settings.py and replace with the link to the secret key variable in Heroku by typing: `SECRET_KEY = os.environ.get(SECRET_KEY)`
+* Comment out the `DATABASES` section in settings.py and replace with:
+```
+DATABASES = {
+  'default': 
+  dj_database_url.parse(os.environ.get("DATABASE_URL"))
+  }`
+```
+* Create a Cloudinary account and from the 'Dashboard' in Cloudinary copy your url into the env.py file by typing: `os.environ["CLOUDINARY_URL"] = "cloudinary://<insert-your-url>"`
+* In Heroku  add cloudinary url to 'config vars'
+* In Heroku config vars add DISABLE_COLLECTSTATIC with value of '1' (note: this must be removed for final deployment)
+* Add Cloudinary libraries to the installed apps section of settings.py file:
+ ```
+ 'cloudinary_storage'
+ 'django.contrib.staticfiles''
+ 'cloudinary'
+ ```
+* Connect Cloudinary to the Django app in `settings.py`:
+```
+STATIC_URL = '/static'
+STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'STATIC')]
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+MEDIA_URL = '/media/'
+DEFAULT_FILE_STORAGE =
+'cloudinary_storage.storage.MediaCloudinaryStorage'
+* Link file to the templates directory in Heroku 
+* Place under the BASE_DIR: TEMPLATES_DIR = os.path.join(BASE_DIR,
+'templates')
+```
+* Change the templates directory to TEMPLATES_DIR. Place within the TEMPLATES array: `'DIRS': [TEMPLATES_DIR]`
+* Add Heroku Hostname to ALLOWED_HOSTS: ```ALLOWED_HOSTS =
+['rhi-book-nook.herokuapp.com', 'localhost']```
+*Create Procfile at the top level of the file structure and insert the following:
+    ``` web: gunicorn PROJECT_NAME.wsgi ```
+
+* Make an initial (if this has not been done previously) commit and push the code to the GitHub Repository.
+    ```git add .```
+    ```git commit -m "Initial deployment"```
+    ```git push```
+
+### 5. Heroku Deployment: 
+* Click Deploy tab in Heroku
+* In the 'Deployment method' section select 'Github' and click the 'connect to Github' button to confirm.
+* In the 'search' box enter the Github repository name for the project
+* Click search and then click connect to link the heroku app with the Github repository. The box will confirm that heroku is connected to the repository.
+
+### 6. Final Deployment
+In the IDE: 
+* When development is complete change the debug setting to: `DEBUG = False` in `settings.py` 
+* In Heroku settings config vars change the DISABLE_COLLECTSTATIC value to 0
+* Because DEBUG must be switched to True for development and False for production it is recommended that only manual deployment is used in Heroku. 
+* To manually deploy click the button 'Deploy Branch'. The default 'main' option in the dropdown menu should be selected in both cases. When the app is deployed a message 'Your app was successfully deployed' will be shown. Click 'view' to see the deployed app in the browser.
 
 [Back to top](<#contents>)
 
