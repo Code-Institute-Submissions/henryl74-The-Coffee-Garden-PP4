@@ -47,7 +47,7 @@ The Coffee Garden is a small restaurant that lacks an online presence and would 
 
 ## Agile Methodology
 
-The principles of agile methodology were utilized during the project. By assigning user stories to issues and taking advantage of the GitHub Kanban board functionality, the necessary goals and priorities throughout the project could be well defined. In addition, labels were used to further define the priority of eacn user story in the Kanban board.
+The principles of agile methodology were utilized during the project. By assigning user stories to issues and taking advantage of the GitHub Kanban board functionality, the necessary goals and priorities throughout the project could be well defined. In addition, labels were used to further define the priority of each user story in the Kanban board.
 
 [Back to top](<#contents>)
 
@@ -65,22 +65,22 @@ The principles of agile methodology were utilized during the project. By assigni
         -  As a returning visitor, the user can check the menu to see if has changed.
 
 -    #### Admin Stories
-        - As a site admin I could add, update, cancel existing boookings made in my website.
-        - As a site admin I could add, update, delete users registered on my website.
-        - As a site admin I could check all the accounts registered on my website.
+        - As a site admin, I can add, update, cancel existing bookings made in my website.
+        - As a site admin, I can add, update, and delete users registered on my website.
+        - As a site admin, I can check all the accounts registered on my website.
 
 [Back to top](<#contents>)
 
 ## Design
 
-The theme for the project were chosen in accordance with the intended target market in mind for the restaurant. It primarely focus on attracting families, young crows, local residents, and visitors to this region.
+The theme for the project was chosen as per the intended target market in mind for the restaurant. It primarily focuses on attracting families, young people, residents from the area, and visitors to this region.
     
 - Colors  
 The main colors are overall cream-pastel, it blends well with the main product that this restaurant has to offer; the best coffe in town.
 - Font  
 The fonts in the theme are clear and modern and contribute perfectly to the overall look of the site.  
 - Images  
-The images in the theme provide great content to the site; as the user navegates through the pages; reasures him/her the type of products are being served here.
+The images in the theme provide great content to the site; as the user navigates through the pages; it reasures him the type of products that are being served.
 
 [Back to top](<#contents>)
 
@@ -112,7 +112,7 @@ My project consists of nine webpages:
 ### The Navigation Bar
 
 - The navigation bar shows all the sections that the user can enter and provides a quick and easy means of navigating the site.
-- The navigation bar bar is very responsive and user friendly, it has an additional hover effect to help the user with his/her selection.
+- The navigation bar is very responsive and user friendly, it has an additional hover effect to help the user with his selection.
 - The restaurant logo located on the the left hand corner of the navigation bar, helps the user to go back to the home page by clicking on it.
 
 ![Navbar](./docs/readme-testing-images/navigation_bar.jpeg)
@@ -170,6 +170,12 @@ My project consists of nine webpages:
 - Here the user can end his online session, this section also displays a message asking the customer if he wants to proceed with this action.
 
 ![Logout](./docs/readme-testing-images/logout_page.jpeg)
+
+### Footer
+
+- The footer contains the essential information about the restaurant for easy access to the most relevant contact information and social media links on all pages throughout the website.
+
+![Logout](./docs/readme-testing-images/footer_image.jpeg)
 
 [Back to top](<#contents>)
 
