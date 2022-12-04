@@ -85,9 +85,7 @@ The images in the theme provide great content to the site; as the user navegates
 [Back to top](<#contents>)
 
 # Database Schema
-- The database design schema can be viewed below. It consists of a Booking model with a foreignKey of User that relates to the Django standard User model class.  
-
-![dbschema]()
+- It consists of a Booking model with a foreignKey of User that relates to the Django standard User model class.
 
 [Back to top](<#contents>)
 
